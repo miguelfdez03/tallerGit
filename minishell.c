@@ -6,25 +6,27 @@
 /*   By: itjimene <itjimene@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 17:00:04 by miguel-f          #+#    #+#             */
-/*   Updated: 2024/12/12 17:07:45 by itjimene         ###   ########.fr       */
+/*   Updated: 2024/12/12 17:18:32 by itjimene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stdio.h"
 
-void ft_putstr(char *str)
+int ft_putstr(char *str)
 {
 	int i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
 		i++;
 	}
+	return (i);
 }
 
 void main()
 {
-	printf("Hello World\n");
+	char *str = "Hello World";
+	printf("string: %s\n", str);
+	printf("string length: %d\n", ft_putstr(str));
 }
