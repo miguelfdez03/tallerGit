@@ -1,0 +1,3 @@
+[submodule "tallerGit"]
+	path = tallerGit
+	url = git@github.com:Ithril-Laydec/tallerGit.git
