@@ -1,0 +1,6 @@
+# Ignore executable files
+*.exe
+
+# Ignore subjects directory
+*.txt
+*.pdf
